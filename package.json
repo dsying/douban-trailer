@@ -1,0 +1,25 @@
+{
+  "name": "douban-trailer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsying/douban-trailer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dsying/douban-trailer/issues"
+  },
+  "homepage": "https://github.com/dsying/douban-trailer#readme",
+  "dependencies": {
+    "koa": "^2.6.2",
+    "koa-logger": "^3.2.0"
+  }
+}
