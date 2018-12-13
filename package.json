@@ -5,6 +5,7 @@
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
+    "build": "rm -rf parcel/dist && parcel build parcel/index.html --no-cache -d parcel/dist --public-url /dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,7 +20,21 @@
   },
   "homepage": "https://github.com/dsying/douban-trailer#readme",
   "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "koa": "^2.6.2",
-    "koa-logger": "^3.2.0"
+    "koa-logger": "^3.2.0",
+    "koa-static": "^5.0.0",
+    "puppeteer": "^1.11.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "cssnano": "^4.1.7"
   }
 }
