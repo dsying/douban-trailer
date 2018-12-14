@@ -59,5 +59,7 @@ const sleep = time => {
 
   browser.close();
 
-  console.log(result);
+  //process.send()方法可以用来给父进程发送消息。 接收到的消息被视为父进程的ChildProcess对象上的一个'message'事件
+  process.send({result})
+  process.exit(0)
 })();
